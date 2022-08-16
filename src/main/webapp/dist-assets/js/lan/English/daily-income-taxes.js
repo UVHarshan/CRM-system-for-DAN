@@ -1,0 +1,120 @@
+function switchLanguage(siteLanguage) {
+    convertContentToLanguage(TopMenu);
+    convertContentToLanguage(LeftMenu);
+    convertContentToLanguage(DailyIncomeTaxes);
+}
+
+TopMenu = [
+ 
+    ["menuButtonProfile", "Profile"],
+    ["menuButtonManual", "Manual"],
+    ["menuButtonLogout", "Logout"]
+];
+
+LeftMenu = [
+	["pageTitle", "Staff List"],
+	["menuSpanHome", "Home"],
+	["menuSubSpanHome", "Home"],
+	["menuSpanCustomer", "Customer Management"],
+	["menuSpanQuoMan", "Quotation Management"],
+	["menuSpanInvoiceMan", "Invoice Management"],
+	["menuSpanMatterMan", "Case Management"],
+	["menuSpanAssignment", "Assignment Management"],
+	["menuSpanStaff", "Staff Management"],
+	["menuSpanShifftSchedule", "Staff Shift Schedule Management" ],
+	["menuSpanAttendance", "Attendance"],
+	["menuSpanPayrollMan", "Payroll Management"],
+	["menuSpanAnnualPayroll", "Annual Payroll"],
+	["menuSpanPaidGrand", "Paid Grant"],
+	["menuSpanEmployeeManagement", "Employee Management"],
+	["menuSpanAgencyManagement", "Agency Management"],
+	["menuSpanStaffPageLogin", "Staff Page Login"],
+	["menuSpanMasterAdmin", "Master Admin"],
+	["menuSubSpanCompanyInformationManagement", "Company Information"],
+	["menuSubSpanConsumptionTaxManagement", "Consumption Tax"],
+	["menuSubSpanDailyIncomeTax", "Income Tax Daily"],
+	["menuSubSpanMonthlyTaxManagement", "Monthly Tax"],
+	["menuSubSpanAllowanceManagement", "Over Time/Holiday Allowance"],
+	["menuSubSpanPaidTableManagement", "Paid Table"],
+	["menuSubSpanContractTerms", "Contract Terms"],
+	["menuSubSpanEmailTemplateManagement", "Email Template"],
+	["menuSubSpanQuoteTemplateManagement", "Quote Template"],
+	["menuSpanAboutCompliance", "About Compliance"],
+	["menuTermsofServices", "Terms of Services"],
+	["menuPrivacyPolicy", "Privacy Policy"],
+	["menuBasedCommercial", "Transaction Laws"]
+];
+
+
+DailyIncomeTaxes = [
+	["pageTitleDailyIncome", "Daily Income Taxes"],
+	["pageTitleDailyIncomeTaxesDetails", "Daily Income Taxes Details"],
+	["pageTitleDailyIncomeTaxesRegistration", "Daily Income Taxes Registration"],
+	["pageSpanHeadingIncomeTaxDailyList", " Income Tax Daily List"],
+	["pageSpanSubHeadingIncomeTaxDailyList", "You can check the daily income tax information in a list."],
+	["pageLabelYear", "Year"],
+	["selectOptionSelectYear", "Select Year"],
+	["clearAllBtn", "Clear All"],
+	["searchBtn", "Search"],
+	["pageSpanSearchIncomeTaxDetails", "Search Income Tax Details"],
+	["dailyIncomeTHInstep", "Instep"],
+	["dailyIncomeTHB", "B"],
+	["dailyIncomeTHHinoe", "Hinoe"],
+	["dailyIncomeTHNo", "No"],
+	["dailyIncomeTHYear", "Year"],
+	["dailyIncomeTHThreshold", "Threshold"],
+	["dailyIncomeTHTaxDependent0", "Tax Dependent 0"],
+	["dailyIncomeTHTaxDependent1", "Tax Dependent 1"],
+	["dailyIncomeTHTaxDependent2", "Tax Dependent 2"],
+	["dailyIncomeTHTaxDependent3", "Tax Dependent 3"],
+	["dailyIncomeTHTaxDependent4", "Tax Dependent 4"],
+	["dailyIncomeTHTaxDependent5", "Tax Dependent 5"],
+	["dailyIncomeTHTaxDependent6", "Tax Dependent 6"],
+	["dailyIncomeTHTaxDependent7", "Tax Dependent 7"],
+	["dailyIncomeTHTaxRate1", "Tax Rate"],
+	["dailyIncomeTHTaxAmount1", "Tax Amount"],
+	["dailyIncomeTHTaxRate2", "Tax Rate"],
+	["dailyIncomeTHTaxAmount2", "Tax Amount"],
+	["dailyIncomeTHTaxRate3", "Tax Rate"],
+	["pageSpanHeadingIncomeTaxDailyDetails", "Income Tax Daily Details"],
+	["pageSpanSubHeadingIncomeTaxDailyDetails", "You can check the details of the daily income tax amount."],
+	["ButtonReturn", "Return"],
+	["accordionDivIncometaxdailyinformation", "Income Tax Daily Information"],
+	["pageSpanyear", "Year"],
+	["pageSpanThresholdhigherthan", "Threshold (higher than) "],
+	["pageSpanThresholdlessthan", "Threshold (less than)"],
+	["accordionDivdeclarationofdependentdeduction", "There is a declaration of dependent deduction, etc. (A)"],
+	["pageSpanTaxamountdependents0", "Tax amount (0 dependents)"],
+	["pageSpanTaxamountdependents1", "Tax amount (1 dependents)"],
+	["pageSpanTaxamountdependents2", "Tax amount (2 dependents)"],
+	["pageSpanTaxamountdependents3", "Tax amount (3 dependents)"],
+	["pageSpanTaxamountdependents4", "Tax amount (4 dependents)"],
+	["pageSpanTaxamountdependents5", "Tax amount (5 dependents)"],
+	["pageSpanTaxamountdependents6", "Tax amount (6 dependents)"],
+	["pageSpanTaxamountdependents7", "Tax amount (7 dependents)"],
+	["pageSpandeclarationtaxrate", "Tax Rate "],
+	["notaxreturnfordependentdeductions", "No tax return for dependent deductions (B)"],
+	["pageSpannoTaxamount", "Tax Amount"],
+	["pageSpancalculationstandardamount", " Calculation Standard Amount"],
+	["pageSpannoTaxtaxrate", "Tax Rate"],
+	["accordionDivIncometaxdailyinformation", "Day labor / part-time job (Hei)"],
+	["pageSpantaxamount", "Tax Amount"],
+	["pageSpantaxrate1", " Tax Rate"],
+	["pageSpantaxrate2", " Tax Rate"],
+	["pageSpanremarks", "Remarks"],
+	["buttonSpanAddDailyIncomeTaxes", "Add Daily Income Taxes"],
+	["pageSpanSearch", "Search"],
+	["accordionDivDayLaborParttime", "Day labor/part-time job (Hei)"],
+	["buttonTaxDailySaveInformation", "Update Information"],
+	["buttonTaxDailySaveDailyIncomeTaxDetails", "Save Daily Income Tax Details"],
+	["pageSpanHeadingIncomeTaxDailyRegistration", "Income Tax Daily Registration "],
+	["pageSpanSubHeadingIncomeTaxDailyRegistration", "You can add the details of the daily income tax amount."],
+	
+	          
+];
+
+
+DailyIncomeTaxesErrorArray ={"E2240":"Can not be empty",
+						   "E2253":"Should contain only numbers",
+						   "E2254": " Please enter time duration in hh:mm format",	
+ 				  		}

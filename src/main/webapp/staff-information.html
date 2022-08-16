@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Staff Details</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet" />
+
+    <link href="./dist-assets/css/themes/lite-purple.css" rel="stylesheet" />
+    <link href="./dist-assets/css/plugins/perfect-scrollbar.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist-assets/css/plugins/fontawesome-5.css" />
+    <link href="./dist-assets/css/plugins/metisMenu.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist-assets/css/plugins/datatables.min.css" />
+   
+    <link href="./dist-assets/css/plugins/fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist-assets/css/mobios-site.css" />
+
+    <style>
+    </style>
+</head>
+
+<body class="text-left" >
+       <div id="sideBarDiv" class="app-admin-wrap layout-sidebar-vertical sidebar-full "  >
+       
+        <!-- <div class="app-admin-wrap layout-sidebar-vertical sidebar-compact-onhover sidebar-closed sidebar-compact">        -->
+        <div class="sidebar-panel bg-white">
+            <div class="gull-brand pr-3 text-center mt-4 mb-2 d-flex justify-content-center align-items-center" ><img class="pl-3" src="./dist-assets/images/logo.png" alt="alt" />
+                <!--  <span class=" item-name text-20 text-primary font-weight-700">GULL</span> -->
+                <div class="sidebar-compact-switch ml-auto" ><span></span></div>
+            </div>
+            <!--  user -->
+            <div class="scroll-nav ps ps--active-y" data-perfect-scrollbar="data-perfect-scrollbar" data-suppress-scroll-x="true" >
+                <div class="side-nav">
+                    <div class="main-menu" >
+                        <ul class="metismenu" id="menu">
+                            <li class="Ul_li--hover"><a class="has-arrow" href="#"><i class="fa fa-home text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted" id="menuSpanHome">Home</span></a>
+                                <ul class="mm-collapse">
+                                   
+                                    <li class="item-name"><a href="staff-management.html"><i class="i-Circular-Point mr-2 text-muted"></i><span class="text-muted" id="menuSubSpanHome">Home</span></a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="Ul_li--hover"><a href="#"><i class="fa fa-building text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted" id="menuSpanCustomer">Customer</span></a>
+                            </li>
+                            <li class="Ul_li--hover"><a href="#"><i class="fa fa-file  text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted" id="menuSpanQuoMan">Quotation Management</span></a>
+                                
+                            </li>
+                            <li class="Ul_li--hover"><a href="#"><i class="fa fa-file-alt text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted" id="menuSpanInvoiceMan">Invoice Management</span></a>
+                               
+                            </li>
+                            <!--  <p class="main-menu-title text-muted ml-3 font-weight-700 text-13 mt-4 mb-2">UI Elements</p> -->
+                            <li class="Ul_li--hover"><a c href="#"><i class="fa fa-tasks text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted" id="menuSpanMatterMan">Matter Management</span></a>
+                               
+                            </li>
+                            <li class="Ul_li--hover"><a  href="#"><i class="fa fa-check-square text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted" id="menuSpanAssignment">Assignment</span></a>
+                               
+                            </li>
+                            <li class="Ul_li--hover"><a class="has-arrow" href="#"><i class="fa fa-users text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted" id="menuSpanStaff">Staff</span></a>
+                                <ul class="mm-collapse">
+                                    <li class="item-name"><a href="staff-management.html"><i class="i-Circular-Point mr-2 text-muted"></i><span class="text-muted" id="menuSubSpanStaffMan">Staff Management</span></a></li>
+                                    <li class="item-name"><a href="staff-management-2.html"><i class="i-Circular-Point mr-2 text-muted"></i><span class="text-muted" id="menuSubSpanStaffMan2">Staff Management-2</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="Ul_li--hover"><a href=""><i class="fa fa-list-alt text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted"  id="menuSpanShifftSchedule">Shift Schedule </span></a>
+                            
+                            </li>
+                            <li class="Ul_li--hover"><a href=""><i class="fa fa-calendar text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted"  id="menuSpanAttendance">Attendance</span></a>
+                            
+                            </li>
+                            
+                            <li class="Ul_li--hover"><a ><i class="fa fa-money-bill text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted"  id="menuSpanPayrollMan">Payroll Management</span></a>
+                                
+                            </li>
+                            <li class="Ul_li--hover"><a ><i class="fa fa-university text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted"  id="menuSpanAnnualPayroll">Annual Payroll</span></a>
+                                
+                            </li>
+                            <li class="Ul_li--hover"><a ><i class="fa fa-suitcase text-20 mr-2 text-muted"></i><span class="item-name text-15 text-muted"  id="menuSpanPaidGrand">Paid Grant</span></a>
+                                
+                            </li>
+
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 0px; height: 404px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 325px;"></div>
+                </div>
+                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 0px; height: 404px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 325px;"></div>
+                </div>
+            </div>
+            <!--  side-nav-close -->
+        </div>
+        <div class="switch-overlay"></div>
+        <div class="main-content-wrap mobile-menu-content bg-off-white m-0" style="z-index: 1;">
+            <header id="topNewBar" class="main-header bg-white d-flex justify-content-between p-2 sticky-top" style="overflow: visible;" >
+                <div class="header-toggle">
+                    <div class="menu-toggle mobile-menu-icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="header-part-right" >
+                    <div class="dropdown mr-3" >
+                        <div class=" dropdown" id="divLanguageDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-language pt-1 mr-1 text-20 cursor-pointer" role="generic" data-toggle="tooltip" data-placement="top" data-original-title="Language"></i></div>
+                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(130px, 38px, 0px);">
+                            <button class="dropdown-item"  type="button" onclick="setLanguageWithTables('English');">English</button>
+                            <button class="dropdown-item"  type="button" onclick="setLanguageWithTables('Japanese');">Japanese</button>
+                        </div>
+                    </div>
+                    <i class="far fa-file-alt mr-3 mobile-hide text-20 cursor-pointer" role="generic" data-toggle="tooltip" data-placement="top" title="" ></i>
+                    <i class="far fa-file mr-3 text-20 mobile-hide cursor-pointer" role="generic" data-toggle="tooltip" data-placement="top" title="" ></i>
+                    <i  class="far fa-calendar mr-3 mobile-hide text-20 cursor-pointer" role="generic"  data-toggle="tooltip" data-placement="top" title="" ></i>
+                   
+                    <div class="dropdown">
+                        <div class=" dropdown" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="far fa-user pt-1 mr-1 text-20 cursor-pointer" role="generic" data-toggle="tooltip" data-placement="top" ></i>Administrative(User)
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(130px, 38px, 0px);">
+                            <button class="dropdown-item"  type="button" id="menuButtonProfile">Profile</button>
+                            <button class="dropdown-item"  type="button" id="menuButtonManual">Manual</button>
+                            <button class="dropdown-item"  type="button" id="menuButtonLogout">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </header><!-- ============ Body content start ============= -->
+
+            <div class="main-content pt-2"  style="z-index: 1;">
+                <!-- <div class="row">
+                    <div class="col-md-5">
+                        <i class=" text-20 cursor-pointer" role="generic"></i> <h1 class="mr-2">  Staff List</h1>
+                    </div>
+                    <div class="col-md-7">
+                        <button class="DefaultButton btn" role='button'><i class="i-Circular-Point mr-3 text-20 cursor-pointer" role="generic" ></i>Staff Registration</button> 
+                        <button class="DefaultButton btn" role='button'><i class="i-Circular-Point mr-3 text-20 cursor-pointer" role="generic" ></i>Batch Registration</button> 
+                        <button class="DefaultButton btn" role='button'><i class="i-Circular-Point mr-3 text-20 cursor-pointer" role="generic" ></i>Staff List CSV Output</button> 
+                    </div>
+                    
+                </div> -->
+                <!-- <div class="separator-breadcrumb border-top"></div>  -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="bodyMainCard" class="card mb-4">
+                            <div class="card-body p-0"  >
+                              <div class="row pt-4 mt-2 ml-2">
+                                  <div class="col-sm-12 TopActionButDiv mr-4 pr-4 ">
+                                      
+                                  </div>
+                                    <div class="col-md-12 " >
+                                        <h1> <i class="fa fa-users text-30" role="generic" ></i><span id="pageSpanHeadingStaffDetails_test">  Staff Information</span></h1>
+                                       
+                                        <p class="pb-0 mb-0" id="pageSpanSubHeadingStaffDetails_test">You can check the registration information and change the password.</p>
+                                        <p class="pb-0 mb-0" id="pageSpanSubHeadingStaffDetails_test">If there is any change in your registration information, please contact your dispatching company by phone.</p>
+                                    </div>
+                                    <!-- <div class="col-md-8  ">
+                                        <div class="row pt-0  pr-2">
+                                            <div class="col-sm-12 pr-4 TopButDiv">
+                                            <div class="btn-group">
+                                                <button class="DefaultButton btn btn-danger TopButtonMinWidth  dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="buttonSpanStaffDetailsDelete">Delete</span></button>
+                                                <div class="dropdown-menu" x-placement="bottom-start">
+                                                <a class="dropdown-item" href="#"><span id="buttonValueSpanStaffDetailsDelete">Delete Staff</span></a>
+                                                </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-0 ">
+                                            <div class="col-sm-12 pr-4  TopButDiv">
+                                              <button class="DefaultButton btn btn-info TopButtonMinWidth mr-2" role='button'><span id="buttonSpanScheduledShifts">Scheduled Shifts</span></button> 
+                                              <button class="DefaultButton btn btn-info TopButtonMinWidth mr-2" role='button'><span id="buttonSpanAssinmentList">Assinment List</span></button> 
+                                              <button class="DefaultButton btn btn-info TopButtonMinWidth mr-2" role='button'><span id="buttonSpanReturn">Return</span></button>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                              </div>
+
+                     
+
+                              <div class="row" >
+                                  <div class="col-lg-12 col-xl-12 ">
+                                    <div class="row m-1 mt-3">
+                                        <table class="table table-striped m-3">
+                                        
+                                            <tbody>
+                                              <tr>
+                                               <td>Name</td>
+                                               <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>Name Katakana</td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>Postal Code</td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>Prefecture</td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>Address</td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>Address Katakana</td>
+                                                <td></td>
+                                              </tr> 
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                 </div>
+                             
+                              </div>
+
+                            </div>
+                            <br><br> <br><br>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- end of main-content -->
+            </div>
+            <!-- <div class="sidebar-overlay open"></div> Footer Start-->
+            <div class="flex-grow-1"></div>
+        
+            <!-- Footer Start -->
+            <div class="app-footer pt-1 pb-1 FooterSty"  id="siteFooter">
+                <div class="footer-bottom d-flex flex-column flex-sm-row align-items-center mt-1 mb-1" >
+                    <p class="pt-4"><strong>Staff Management CRM Portal</strong></p>
+                    <span class="flex-grow-1"></span>
+                    <div class="d-flex align-items-center">
+                        <img class="logo" src="./dist-assets/images/logo.png" alt="">
+                        <div>
+                            <p class="m-0">&copy; <script>document.write(new Date().getFullYear())</script> MobiOs</p>
+                            <p class="m-0">All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fotter end -->
+        </div>
+      </div><!-- ============ Search UI Start ============= -->
+  
+    <!-- ============ Search UI End ============= -->
+
+    <script src="./dist-assets/js/language_script.js"></script>
+
+    <script>
+        const lan = getLanguage();
+        console.log(lan);
+        if (lan == "English") {
+            ToggleLanguageEnglish();
+
+        }
+        if (lan == "Japanese") {
+            ToggleLanguageJapanese();
+        }
+    </script>
+    
+    <script src="./dist-assets/js/plugins/jquery-3.3.1.min.js"></script>
+    <script src="./dist-assets/js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="./dist-assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="./dist-assets/js/scripts/tooltip.script.min.js"></script>
+    <script src="./dist-assets/js/scripts/script.min.js"></script>
+    <script src="./dist-assets/js/scripts/script_2.min.js"></script>
+    <script src="./dist-assets/js/scripts/sidebar.large.script.min.js"></script>
+    <script src="./dist-assets/js/plugins/feather.min.js"></script>
+    <script src="./dist-assets/js/plugins/metisMenu.min.js"></script>
+    <script src="./dist-assets/js/scripts/layout-sidebar-vertical.min.js"></script>
+    <script src="./dist-assets/js/plugins/echarts.min.js"></script>
+    <script src="./dist-assets/js/scripts/echart.options.min.js"></script>
+    <script src="./dist-assets/js/scripts/dashboard.v1.script.min.js"></script>
+    <script src="./dist-assets/js/plugins/datatables.min.js"></script>
+    <script src="./dist-assets/js/scripts/datatables.script.min.js"></script>
+
+    <script>
+    
+           
+           $(document).ready(function () {
+
+                    drawDtataTable(lan); 
+
+                    bankTransferLoad();
+
+
+                    $("#paymentMethod").change(function() {
+                    bankTransferLoad();
+                     });
+           
+                
+
+                  //onfocus="(this.type='date')"  id="dateOfBirthFrom" name="dateOfBirthFrom" placeholder="From"
+                  $("#dateOfBirthFrom").focusout(function(){
+                     this.type='text';
+                     document.getElementById("dateOfBirthFrom").placeholder = "From";
+                   });
+
+                   $("#dateOfBirthTo").focusout(function(){
+                     this.type='text';
+                     document.getElementById("dateOfBirthTo").placeholder = "To";
+                   });
+                });
+           
+        window.onscroll = function() {myFunction()};
+        
+        var topNewBar = document.getElementById("topNewBar");
+        var sticky = topNewBar.offsetTop;
+        
+
+       
+            var loadFile = function(event) {
+                var output = document.getElementById('output');
+                output.src = URL.createObjectURL(event.target.files[0]);
+                output.onload = function() {
+                URL.revokeObjectURL(output.src) // free memory
+                }
+            };
+
+
+        function bankTransferLoad()
+        {
+            let value = $("#paymentMethod").val();
+           
+            if(value == "transfer")
+            {
+                $('#transferMainDiv').show();
+            }else{
+                $('#transferMainDiv').hide();
+            }
+        }
+
+
+        function myFunction()
+         {
+          if (window.pageYOffset >= sticky) {
+            topNewBar.classList.add("sticky")
+          } else {
+            topNewBar.classList.remove("sticky");
+          }
+        }
+
+ var table ;
+
+function drawDtataTable(language){
+    if(language =="Japanese" )
+    {
+        search = "探す";
+        info= "ページを表示しています _PAGE_ の _PAGES_";
+        lengthMenu = "ディスプレイ _MENU_ ページあたりのレコード数";
+        zeroRecords = "見つからない - すいません";
+        infoEmpty = "記録はありません";
+        infoFiltered = "(からフィルタリングされます。 _MAX_ トータルレコード)";
+        previous ="前";
+        next ="次";
+        first  = "最初のページ"; 
+        last = "最終ページ";
+
+    }else{
+        search = "Search";
+        info= "Showing page _PAGE_ of _PAGES_";
+        lengthMenu = "Display _MENU_ records per page";
+        zeroRecords = "Nothing found - sorry";
+        infoEmpty = "No records available";
+        infoFiltered = "(filtered from _MAX_ total records)";
+        previous ="Previous";
+        next ="Next";
+        first  = "First page"; 
+        last = "Last page";
+    }
+
+    table= $('#search_staff_table').DataTable( {
+            language: {
+            search : search,
+            info :info,
+            lengthMenu : lengthMenu,
+            zeroRecords : zeroRecords,
+            infoEmpty : infoEmpty,
+            infoFiltered :infoFiltered,
+            "paginate": {
+            previous : previous,
+            next:next,
+            first : first,
+            last :last
+            }
+            }} );
+}
+function setLanguageWithTables(selectedLanguage){
+    setLanguage(selectedLanguage);
+    table.destroy();
+    drawDtataTable(selectedLanguage);
+}
+        
+        </script>
+</body>
+
+</html>

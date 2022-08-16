@@ -1,0 +1,85 @@
+
+function switchLanguage(siteLanguage) {
+    convertContentToLanguage(TopMenu);
+    convertContentToLanguage(LeftMenu);
+    convertContentToLanguage(EmailTemplates);
+}
+
+TopMenu = [
+    ["menuButtonProfile", "プロフィール"],
+    ["menuButtonManual",  "マニュアル"],
+    ["menuButtonLogout", "ログアウト"]
+];
+
+LeftMenu = [
+		["pageTitle", "スタッフ一覧"],
+		["menuSpanHome", "Home"],
+		["menuSubSpanHome", "Home"],
+		["menuSpanCustomer", "顧客管理"],
+		["menuSpanQuoMan", "見積書管理"],
+		["menuSpanInvoiceMan", "請求書管理"],
+		["menuSpanMatterMan", "案件管理"],
+		["menuSpanAssignment", "アサイン管理"],
+		["menuSpanStaff", "スタッフ管理"],
+		["menuSpanShifftSchedule", "スタッフシフト予定管理" ],
+		["menuSpanAttendance", "勤怠管理"],
+		["menuSpanPayrollMan", "給与管理"],
+		["menuSpanAnnualPayroll", "Annual Payroll"],
+		["menuSpanPaidGrand", "Paid Grant"],
+		["menuSpanEmployeeManagement", "社員管理"],
+		["menuSpanAgencyManagement", "代理店管理"],
+		["menuSpanStaffPageLogin", "スタッフページログイン"],
+		["menuSpanMasterAdmin", "マスタ管理"],
+		["menuSubSpanCompanyInformationManagement", "会社情報管理"],
+		["menuSubSpanConsumptionTaxManagement", "消費税管理"],
+		["menuSubSpanDailyIncomeTax", "源泉徴収日額管理"],
+		["menuSubSpanMonthlyTaxManagement", "源泉徴収月額管理"],
+		["menuSubSpanAllowanceManagement", "残業・休日手当管理"],
+		["menuSubSpanPaidTableManagement", "有給テーブル管理"],
+		["menuSubSpanContractTerms", "契約書条件"],
+		["menuSubSpanEmailTemplateManagement", "メールテンプレート管理"],
+		["menuSubSpanQuoteTemplateManagement", "見積りテンプレート管理"],
+		["menuSpanAboutCompliance", "コンプライアンスについて"],
+		["menuTermsofServices", "利用規約"],
+		["menuPrivacyPolicy", "プライバシーポリシー"],
+		["menuBasedCommercial", "特定商取引法に基づく表示"]
+];
+
+EmailTemplates = [
+		["pageTitleEmailTemplateList", "メールテンプレート一覧"],
+		["pageTitleEmailTemplateDetails", "メールテンプレート詳細"],
+		["pageSpanHeadingEmailTemplateList", "メールテンプレート一覧"],
+		["pageSpanSubHeadingEmailTemplateList", "メールテンプレートの情報を一覧で確認することができます。"],
+		["pageSpanSearchEmailDetails", "メールテンプレート情報を一覧で確認できます。"],
+		["tableTHNo", "No."],
+		["tableTHCode", "コード"],
+		["tableTHTemplateName", "テンプレート名"],
+		["tableTHTitle", "タイトル"],
+		["tableTHUse", "用途"],
+		["pageSpanHeadingEmailTemplateDetails", " メールテンプレート詳細"],
+		["pageSpanSubHeadingEmailTemplateDetails", "メールテンプレートの修正ができます。"],
+		["buttonSpanReturn", "戻る "],
+		["accordionDivEmailTemplateInformation", "メールテンプレート情報"],
+		["pageSpanCode", "コード"],
+		["pageSpanTemplateName", "テンプレート名"],
+		["pageSpanTitle", "タイトル"],
+		["pageSpanBody", "本文"],
+		["pageSpanEmbeddedCharactersforBody", "本文用埋め込み文字"],
+		["helpmbeddedCharactersforBody", "※リストから選択すると本文に挿入されます"],
+		["optionmbeddedCharactersforBodyStaffName", "スタッフ名"],
+		["optionmbeddedCharactersforBodyManager", "担当者"],
+		["optionmbeddedCharactersforBodyTargetDate", "対象年月"],
+		["optionmbeddedCharactersforBodyConfirmedDateTime", "確定日時"],
+		["optionmbeddedCharactersforBodyCompanyPhoneNumber", "会社電話番号"],
+		["optionmbeddedCharactersforBodyCompanyName", "会社名"],
+		["optionmbeddedCharactersforBodyCompanyZipCode", "会社郵便番号"],
+		["optionmbeddedCharactersforBodyCompanyAddress", "会社住所"],
+		["optionmbeddedCharactersforBodyCompanyFax", "会社FAX"],
+		["optionmbeddedCharactersforBodyCompanyEmail", "会社メールアドレス"],
+		["optionmbeddedCharactersforBodySystemURL", "システムURL"],
+		["pageSpanUse", "用途"],
+		["pageSpanRemarks", "備考"],
+		["buttonUpdateEmailTemplate", "メールテンプレートを更新"],
+		["buttonUpdateEmailTemplate", "メールテンプレートを更新"],
+
+];

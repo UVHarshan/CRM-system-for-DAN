@@ -1,0 +1,67 @@
+function switchLanguage(siteLanguage) {
+    convertContentToLanguage(TopMenu);
+    convertContentToLanguage(LeftMenu);
+    convertContentToLanguage(OverTimeHoliday);
+
+}
+
+TopMenu = [
+ 
+     ["menuButtonProfile", "プロフィール"],
+     ["menuButtonManual", "マニュアル"],
+     ["menuButtonLogout", "ログアウト"],
+];
+
+LeftMenu = [
+		["pageTitle", "スタッフ一覧"],
+		["menuSpanHome", "Home"],
+		["menuSubSpanHome", "Home"],
+		["menuSpanCustomer", "顧客管理"],
+		["menuSpanQuoMan", "見積書管理"],
+		["menuSpanInvoiceMan", "請求書管理"],
+		["menuSpanMatterMan", "案件管理"],
+		["menuSpanAssignment", "アサイン管理"],
+		["menuSpanStaff", "スタッフ管理"],
+		["menuSpanShifftSchedule", "スタッフシフト予定管理" ],
+		["menuSpanAttendance", "勤怠管理"],
+		["menuSpanPayrollMan", "給与管理"],
+		["menuSpanAnnualPayroll", "Annual Payroll"],
+		["menuSpanPaidGrand", "Paid Grant"],
+		["menuSpanEmployeeManagement", "社員管理"],
+		["menuSpanAgencyManagement", "代理店管理"],
+		["menuSpanStaffPageLogin", "スタッフページログイン"],
+		["menuSpanMasterAdmin", "マスタ管理"],
+		["menuSubSpanCompanyInformationManagement", "会社情報管理"],
+		["menuSubSpanConsumptionTaxManagement", "消費税管理"],
+		["menuSubSpanDailyIncomeTax", "源泉徴収日額管理"],
+		["menuSubSpanMonthlyTaxManagement", "源泉徴収月額管理"],
+		["menuSubSpanAllowanceManagement", "残業・休日手当管理"],
+		["menuSubSpanPaidTableManagement", "有給テーブル管理"],
+		["menuSubSpanContractTerms", "契約書条件"],
+		["menuSubSpanEmailTemplateManagement", "メールテンプレート管理"],
+		["menuSubSpanQuoteTemplateManagement", "見積りテンプレート管理"],
+		["menuSpanAboutCompliance", "コンプライアンスについて"],
+		["menuTermsofServices", "利用規約"],
+		["menuPrivacyPolicy", "プライバシーポリシー"],
+		["menuBasedCommercial", "特定商取引法に基づく表示"]
+];
+
+OverTimeHoliday = [
+	["pageTitleOvertimeMidnightHolidayAllowanceInformation", "時間外・深夜・休日出勤手当のご案内"],
+    ["pageSpanHeadingOvertimeMidnightHolidayAllowanceInformation", "残業・深夜・休日手当情報"],
+    ["pageSpanSubHeadingOvertimeMidnightHolidayAllowanceInformation", "残業・深夜・休日手当の増加率の設定ができます。"],
+    ["accordionDivOvertimeMidnightHolidayAllowanceInformation", "残業・深夜・休日手当情報"],
+    ["pageSpanSubHeadingOverTimeHolidayAllowance", "残業・深夜・休日手当情報の時間、割合は、給与・賞与に適用されます。法律に定められた範囲でご記入ください。"],
+    ["pageSpanlegalWorkingHoursPerDay", "１日の法定労働時間"],
+    ["pageSpanIncreaseRateofLegalOvertimeWork", "法定時間外労働の増加率"],
+    ["pageSpanIncreaseRateofLegalOvertimeWorkHourlyorMonthly", "法定時間外労働の増加率（1ヶ月６０時間以上）"],
+    ["pageSpanIncreaserateoflatenightworkinghours", "深夜労働時間の増加率（２２：００〜５：００の労働時間）"],
+    ["pageSpanIncreaserateofholidaywork", "休日労働の増加率"],
+    ["buttonUpateAllowanceInformation", "残業・深夜・休日手当情報を更新"]
+	          
+];
+
+overTimeHolidayErrorArray ={"E2240":"空であってはならない",
+						   "E2253":"数字のみであること",	
+						   "E2254": "継続時間をhh:mm形式で入力してください。",
+ 				  		}
